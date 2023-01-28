@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import numpy
+
+#plt.plot([xCords], [yCords])
+plt.plot([1, 2, 3, 4], [1, 4, 2, 5], color='red') 
+         
+plt.plot([1, 5, 7, 8], [4, 4, 7, 3], color='green') 
+
+plt.plot([1, 5, 3, 5], [5, 3, 7, 9], 'o') # can also be 's' and '^'
+
+X = numpy.linspace(-numpy.pi, numpy.pi, 256, endpoint=True) 
+plt.plot(numpy.sin(X), numpy.cos(X))
+
+# lable axis
+plt.ylabel('Y-axis')
+plt.xlabel('X-axis')
+
+#dislays graph
+plt.show()
