@@ -14,6 +14,24 @@ class Pin:
     def addTotalPins(cls): # method that only works on the class and not on instances
         cls.TotalPins += 1
 
+# + - Public
+# - - Private
+# # - Protected
+# ~ - Package/Internal
+
+def my_decorator(func):
+    def wrapper():
+        print("Before the function is called.")
+        func()
+        print("After the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+
 pins = []
 for x in range(3):
     name = input("\nEnter pin name: ")

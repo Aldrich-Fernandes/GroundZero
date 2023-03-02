@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 Graph = {
     "A": {"B":2, "C":3},
     "B": {"D":7, "E":3, "C":5},

@@ -12,7 +12,7 @@ class Math:
     @staticmethod
     def pr():
         print("run")
-
+    
 print(Math.add(2,7)) # the Math class dosen't need any instance
 print(Math.subtract(7,10))
 Math.pr()
